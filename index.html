@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Report ⚠</title>
     <!-- cdn font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- css bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="/assets/images/idn.png" type="image/x-icon">
 
+    <!-- AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- my css -->
-     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 
+<body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary-subtle py-3">
         <div class="container">
-            <a class="navbar-brand d-flex align-items gap-2" href="#">
+            <a class="navbar-brand d-flex align-items gap-2 animate__animated animate__lightSpeedInLeft" href="#">
                 <img src="/assets/images/idn.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
                 <span class="fw-bold text-primary-emphasis"> E-Report</span>
             </a>
-            <button class="navbar-toggler bg-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-white shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse animate__animated animate__lightSpeedInRight"
+                id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto gap-4 text-center pt-3 pt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Home</a>
+                        <a class="nav-link text-primary" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Features</a>
+                        <a class="nav-link text-primary" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Pricing</a>
+                        <a class="nav-link text-primary" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#recent">Recents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#faq">FAQ</a>
                     </li>
                 </ul>
             </div>
-         </div>
+        </div>
     </nav>
     <!-- Navbar end -->
 
     <!-- Hero -->
-     <section id="hero">
+    <section id="hero">
         <div class="container">
-            <div class="hero row flex-nowrap align-items-center justify-content-between flex-column gap-5 flex-md-row gap-md-0">
-                <div class="col text-center text-md-start">
-                <h1 class="fw-bold">Selamat datang <br>
-                    di Website IDN <span class="text-primary"> E-Report 2025 </span>
-                Forum Pengaduan </h1>
-                <p class="lh-lg mb-4">Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Reprehenderit illo, animi amet illum dolore repellat vero 
-                    veniam vel eaque officia ipsam suscipit mollitia repellendus est debitis ipsa 
-                    cupiditate nulla quis?
-                </p>
-                <div>
-                    <a class="btn btn-primary" href="#about">About Us</a>
-                    <a class="btn btn-outline-primary" href="#service">Let's Start</a>
+            <div
+                class="hero row flex-nowrap align-items-center justify-content-between flex-column gap-5 flex-md-row gap-md-0">
+                <div class="col text-center text-md-start 
+                animate__animated animate__fadeInLeft animate__delay-1s">
+                    <h1 class="fw-bold">Selamat datang <br>
+                        di Website IDN <span class="text-primary"> E-Report 2025 </span>
+                        Forum Pengaduan </h1>
+                    <p class="lh-lg mb-4"> Website ini diperuntukkan untuk forum Pengaduan Resmi SMK IDN untuk menampung
+                        keluhan, saran, dan masukan dari seluruh warga sekolah.
+                        Website ini dibuat untuk memudahkan proses pelaporan secara cepat, aman, dan transparan.
+                    </p>
+                    <div>
+                        <a class="btn btn-primary" href="#about">About Us</a>
+                        <a class="btn btn-outline-primary" href="#service">Let's Start</a>
+                    </div>
                 </div>
-                </div>
-                <div class="col d-flex justify-content-center justify-content-lg-end">
+                <div class="col d-flex justify-content-center justify-content-lg-end 
+                animate__animated animate__fadeInRight animate__delay-1s">
                     <img src="/assets/images/hero.png" alt="">
                 </div>
             </div>
         </div>
-     </section>
-     <!-- Hero end -->
+    </section>
+    <!-- Hero end -->
 
-     <!-- About -->
+    <!-- About -->
     <section id="about">
         <div class="container">
             <div class="about row">
                 <div class="col text-center">
-                    <h1 class="fw-bold mb-4 text-primary">Tentang kami</h1>
-                    <p class="lh-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quis quos cupiditate perspiciatis nulla consequatur, harum animi! Eum, ea id eligendi maxime expedita reprehenderit quo? Numquam quaerat nesciunt odit nihil?</p>
-                    <img src="assets/images/about.png" alt="">
+                    <h1 class="fw-bold mb-4 text-primary" data-aos="fade-up" data-aos-duration="1000">Tentang kami</h1>
+                    <p class="lh-lg mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        IDN E-Report 2025 hadir sebagai wadah bagi siswa SMK IDN untuk menyampaikan keluhan, kritik,
+                        atau saran dengan mudah. Semua laporan yang masuk akan ditangani secara profesional dengan tetap
+                        menjaga kerahasiaan pelapor. Kami percaya, suara kalian penting untuk kemajuan sekolah.</p>
+                    <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" src="assets/images/about.png"
+                        alt="">
                 </div>
             </div>
         </div>
@@ -83,150 +109,340 @@
     <!-- About end -->
 
     <!-- Services -->
-     <section id="service">
+    <section id="service">
         <div class="container">
             <div class="row mb-5">
-                <h1 class="fw-bold">Services</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fuga inventore tempora est impedit, placeat sapiente beatae facere iure earum quas fugit expedita laudantium totam. Obcaecati recusandae aspernatur dolor molestias.</p>
+                <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">Services</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Kami menyediakan beberapa piliyan
+                    layanan pengaduan untuk memudahkan pengguna dalam mengirimkan laporan, masukan-masukan ataupun
+                    aspirasi yang kami harap memang benar sesuai dengan fakta dan dapat membantu kemajuan seklah dengan
+                    memberikan masukan yang membangun.</p>
             </div>
             <div class="row p-2 gap-3">
-                <div class="col bg-primary-subtle p-4 shadow rounded-3 text-primary-emphasis">
+                <div class="col bg-primary-subtle p-4 shadow rounded-3 text-primary-emphasis" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="500">
                     <i class="fa-solid fa-graduation-cap mb-3"></i>
                     <h4 class="fw-bold mb-3 text-capitalize">pengaduan Akademik</h4>
-                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga quos non quae aspernatur placeat eos, vitae voluptatum eaque eum hic possimus repellendus dicta animi deleniti aliquid sapiente totam. Perferendis?</p>
+                    <p class="lh-lg">Layanan ini digunakan untuk menyampaikan masalah yang berkaitan dengan kegiatan
+                        belajar mengajar. Misalnya, jadwal pelajaran, tugas, nilai, atau pelayanan guru. Setiap laporan
+                        akan diproses secara adil demi kenyamanan belajar siswa.</p>
                 </div>
-                <div class="col bg-primary-subtle p-4 shadow rounded-3 text-primary-emphasis">
+                <div class="col bg-primary-subtle p-4 shadow rounded-3 text-primary-emphasis" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="650">
                     <i class="fa-solid fa-screwdriver-wrench mb-3"></i>
                     <h4 class="fw-bold mb-3">Pengaduan Fasilitas</h4>
-                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid obcaecati autem quis omnis sunt odit fugiat adipisci molestias, debitis perspiciatis deserunt laboriosam tempore maiores incidunt quaerat illum id ad.</p>
+                    <p class="lh-lg">Jika menemukan kendala terkait sarana dan prasarana sekolah, seperti ruang kelas,
+                        lapangan, tempat makan, atau fasilitas umum lainnya, siswa dapat melaporkannya melalui layanan
+                        ini agar segera ditindaklanjuti.</p>
                 </div>
-                <div class="col bg-primary-subtle p-4 shadow rounded-3 text-primary-emphasis">
+                <div class="col bg-primary-subtle p-4 shadow rounded-3 text-primary-emphasis" data-aos="fade-up"
+                    data-aos-duration="1000" data-aos-delay="800">
                     <i class="fa-solid fa-user-secret mb-3"></i>
                     <h4 class="fw-bold mb-3">Pengaduan Anonymous</h4>
-                    <p class="lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, illum voluptatem officia iste odio exercitationem vero, est omnis ipsam debitis laboriosam, minus velit obcaecati dolor aliquid animi quibusdam quam ullam?</p>
+                    <p class="lh-lg">Bagi yang ingin menyampaikan keluhan, kritik, atau saran tanpa mencantumkan
+                        identitas, layanan anonymous bisa digunakan. Tujuannya agar semua warga sekolah tetap merasa
+                        aman dan bebas berpendapat.</p>
                 </div>
             </div>
         </div>
-     </section>
-     <!-- Services end -->
+    </section>
+    <!-- Services end -->
 
     <!-- Recent Report -->
-     <section id="recent">
+    <section id="recent">
         <div class="container">
             <div class="mb-5 text-end">
-                <h1 class="fw-bold">Recent Report</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde doloremque repellat exercitationem.</p>
+                <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">Recent Report</h1>
+                <p class="align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Daftar
+                    laporan dan pengaduan terbaru yang masuk dari siswa, guru, maupun orang tua. Semua laporan
+                    ditampilkan secara transparan agar dapat segera ditindaklanjuti.</p>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                     <div class="card">
                         <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4);">
                             <a href="" class="text-decoration-none text-white">Akademik</a>
                         </div>
                         <div style="max-height: 210px; overflow: hidden">
-                        <img src="/assets/images/ronaldo.jpg" class="img-fluid object-cover object-center" alt="...">
+                            <img src="/assets/images/ronaldo.jpg" class="img-fluid object-cover object-center"
+                                alt="...">
                         </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Recent Report</h5>
-                                <p>
-                                    <small>
-                                        By: <a href="#" class="text-decoration-none">Cristiano Ronaldo</a> 2 Hours Ago
-                                    </small>
-                                </p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of  the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Report</h5>
+                            <p>
+                                <small>
+                                    By: <a href="#" class="text-decoration-none">Cristiano Ronaldo</a> 2 Hours Ago
+                                </small>
+                            </p>
+                            <p class="card-text">"Beberapa kelas mengalami kendala Tv yang tidak berfungsi. Diperlukan
+                                perbaikan agar proses belajar mengajar tidak terganggu."</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                     <div class="card">
                         <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4);">
                             <a href="" class="text-decoration-none text-white">Akademik</a>
                         </div>
                         <div style="max-height: 210px; overflow: hidden">
-                        <img src="/assets/images/curry.jpg" class="img-fluid object-cover object-center" alt="...">
+                            <img src="/assets/images/curry.jpg" class="img-fluid object-cover object-center" alt="...">
                         </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Recent Report</h5>
-                                <p>
-                                    <small>
-                                        By: <a href="#" class="text-decoration-none">Stephen Curry</a> 2 Hours Ago
-                                    </small>
-                                </p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of  the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Report</h5>
+                            <p>
+                                <small>
+                                    By: <a href="#" class="text-decoration-none">Stephen Curry</a> 3 Hours Ago
+                                </small>
+                            </p>
+                            <p class="card-text">"Kantin sekolah sering kehabisan stok makanan sehat lebih awal. Mohon
+                                adanya penambahan variasi menu agar kebutuhan siswa tetap terpenuhi."</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                     <div class="card">
                         <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4);">
                             <a href="" class="text-decoration-none text-white">Akademik</a>
                         </div>
                         <div style="max-height: 210px; overflow: hidden">
-                        <img src="/assets/images/lebron.jpg" class="img-fluid object-cover object-center" alt="...">
+                            <img src="/assets/images/lebron.jpg" class="img-fluid object-cover object-center" alt="...">
                         </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Recent Report</h5>
-                                <p>
-                                    <small>
-                                        By: <a href="#" class="text-decoration-none">Lebron James</a> 5 Hours Ago
-                                    </small>
-                                </p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of  the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Report</h5>
+                            <p>
+                                <small>
+                                    By: <a href="#" class="text-decoration-none">Lebron James</a> 5 Hours Ago
+                                </small>
+                            </p>
+                            <p class="card-text">"Suara speaker di Masjid terkadang kurang jelas saat digunakan. Perlu
+                                pengecekan sistem audio agar aktifitas dan ibadah tidak terganggu."</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                     <div class="card">
                         <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4);">
                             <a href="" class="text-decoration-none text-white">Akademik</a>
                         </div>
                         <div style="max-height: 210px; overflow: hidden">
-                        <img src="/assets/images/messi.jpg" class="img-fluid object-cover object-center" alt="...">
+                            <img src="/assets/images/messi.jpg" class="img-fluid object-cover object-center" alt="...">
                         </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Recent Report</h5>
-                                <p>
-                                    <small>
-                                        By: <a href="#" class="text-decoration-none">Lioner Messi</a> 3 Hours Ago
-                                    </small>
-                                </p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of  the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Report</h5>
+                            <p>
+                                <small>
+                                    By: <a href="#" class="text-decoration-none">Lioner Messi</a> 24 Hours Ago
+                                </small>
+                            </p>
+                            <p class="card-text">"Air Sering habis. Diperlukan perbaikan dan pengecekan secara berkala
+                                agar air dapat digunakan terutama saat jam-jam mandi, supaya siswa tidak terlambat apel
+                                pagi"</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                     <div class="card">
                         <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4);">
                             <a href="" class="text-decoration-none text-white">Akademik</a>
                         </div>
                         <div style="max-height: 210px; overflow: hidden">
-                        <img src="/assets/images/Jordan.jpg" class="img-fluid object-cover object-center" alt="...">
+                            <img src="/assets/images/Jordan.jpg" class="img-fluid object-cover object-center" alt="...">
                         </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Recent Report</h5>
-                                <p>
-                                    <small>
-                                        By: <a href="#" class="text-decoration-none">Michael Jordan</a> 4 Hours Ago
-                                    </small>
-                                </p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of  the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Report</h5>
+                            <p>
+                                <small>
+                                    By: <a href="#" class="text-decoration-none">Michael Jordan</a> 2 Days Ago
+                                </small>
+                            </p>
+                            <p class="card-text">"Beberapa ruang kelas terlalu panas karena kipas angin tidak berfungsi.
+                                Dibutuhkan perbaikan atau tambahan pendingin udara agar siswa lebih nyaman belajar."</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Selengkapnya</a>
+                    <a href=""
+                        class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Selengkapnya</a>
                     <i class="fa-solid fa-arrow-up-right-from-square text-primary"></i>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="fw-bold mb-4 text-primary" data-aos="fade-up" data-aos-duration="1000">FAQ</h1>
+                <p class="lh-lg mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">"Pertanyaan yang
+                    sering ditanyakan seputar penggunaan E-Report IDNBS. Temukan jawabannya di sini."</p>
+            </div>
+            <div class="accordion pt-4" id="accordionFlushExample">
+                <div class="row row-cols-md-2 row-cols-md-1 g-4">
+                    <div class="col">
+                        <div class="accordion-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-primary text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true"
+                                    aria-controls="faqOne">
+                                    Bagaimana cara membuat laporan baru?
+                                </button>
+                            </h2>
+                            <div id="faqOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Untuk membuat laporan baru, klik tombol “Buat Laporan” di
+                                    menu utama, isi formulir sesuai kategori pengaduan, lalu kirim.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-primary text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="true"
+                                    aria-controls="faqTwo">
+                                    Apakah laporan saya bisa anonim?
+                                </button>
+                            </h2>
+                            <div id="faqTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Ya, Anda dapat memilih opsi <code>Anonim</code> saat membuat
+                                    laporan sehingga identitas tidak akan ditampilkan.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+                            <h2 class="accordion-header">
+                                <button class=" accordion-button bg-primary text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faqThere" aria-expanded="true"
+                                aria-controls="faqThere">
+                                Berapa lama laporan saya diproses?
+                                </button>
+                            </h2>
+                            <div id="faqThere" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Waktu pemrosesan laporan bervariasi, biasanya antara 1–3
+                                    hari kerja tergantung kategori dan tingkat urgensi.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-primary text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="true"
+                                    aria-controls="faqFour">
+                                    Siapa yang dapat melihat laporan saya?
+                                </button>
+                            </h2>
+                            <div id="faqFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Hanya pihak sekolah yang berwenang (admin/guru terkait) yang
+                                    dapat mengakses detail laporan Anda.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-primary text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="true"
+                                    aria-controls="faqFive">
+                                    Bisakah saya mengedit laporan yang sudah dikirim?
+                                </button>
+                            </h2>
+                            <div id="faqFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Tidak, laporan yang sudah terkirim tidak bisa diubah. Namun,
+                                    Anda dapat menambahkan laporan baru jika ada pembaruan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="accordion-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1200">
+                            <h2 class="accordion-header" data-aos="fade-left" data-aos-duration="1000"
+                                data-aos-delay="1200">
+                                <button class="accordion-button bg-primary text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="true"
+                                    aria-controls="faqSix">
+                                    Bagaimana cara memantau status laporan saya?
+                                </button>
+                            </h2>
+                            <div id="faqSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Anda dapat masuk ke menu “Laporan Saya” untuk melihat status
+                                    laporan, dan coba-lah lihat bagian recent-report jika dinasa terdapat laporan anda,
+                                    maka tandanya laporan anda sudah masuk dan akan segera diproses.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ end -->
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5">
+        <div class="container">
+            <div class="row justify-content-between row-gap-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="/assets/images/idn.png" alt="Logo" width="30"
+                            class="d-inline-block align-text-top rounded">
+                        <h2 class="fw-bold text-white align-items-center"> E-Report</h2>
+                    </div>
+                    <p class="text-white lh-lg opacity-75 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit deleniti quas, perferendis adipisci blanditiis ab hic natus. Ea, vitae praesentium?</p>
+                </div>
+                <div class="col-md-2 d-flex flex-column text-white gap-2">
+                    <h4 class="fw-bold">Menu</h4>
+                    <a href="#hero" class="footer-link text-decoration-none text-white">Home</a>
+                    <a href="#about" class="footer-link text-decoration-none text-white">About</a>
+                    <a href="#service" class="footer-link text-decoration-none text-white">Services</a>
+                    <a href="#recent" class="footer-link text-decoration-none text-white">Recents</a>
+                    <a href="#faq" class="footer-link text-decoration-none text-white">FAQ</a>
+                </div>
+                <div class="col-md-4 d-flex flex-column text-white gap-2">
+                    <h4 class="fw-bold">Contact US</h4>
+                    <p class="d-flex align-items-center gap-2 m-0 opacity-75">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                        DanishIzz@idn.sch.id
+                    </p>
+                    <p class="d-flex align-items-center gap-2 m-0 opacity-75">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        +62-8123-4567-8953
+                    </p>
+                    <p class="d-flex align-items-center gap-2 m-0 opacity-75">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Jalan Raya Jl. KH. Abdul Hamid No.02, RT.06
+                    </p>
+                </div>
+            </div>
+            <div class="copyright text-white text-center">
+                <p>&copy; Copyright By <span class="fw-bold">Danish Izz</span> 2025, All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
 
     <!-- js bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
+
 </html>

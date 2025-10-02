@@ -28,6 +28,14 @@ section {
     width: 500px;
 }
 
+.hero, .about {
+    overflow: hidden;
+}
+
+#services, #recent, #faq {
+    overflow: hidden;
+}
+
 .about {
     font-family: "Macondo", cursive;
     font-weight: 400;
@@ -43,6 +51,33 @@ section {
     width: 600px;
 }
 
+#recent {
+    margin-top: 200px;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    opacity: 75%;
+}
+
+.footer-link:hover {
+    opacity: 100%;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 100px;
+}
+
+/* animate */
+.hero .col:nth-child(1) {
+    --animate-delay: 0.5s;
+}
 
 /* Responsive */
 @media (max-width: 1024px) {
