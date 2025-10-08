@@ -62,14 +62,22 @@
 
         <!-- All Report -->
          <section id="reports" class="py-5">
-            <!-- judul -->
-                <div class="container">
-                    <div class="text-center">
+            <div class="container">
+                <!-- judul -->
+                <div class="d-flex justify-content-md-between justify-content-center align-items-center flex-wrap mb-5">
+                    <div class="col-md-8 text-center text-md-start">
                         <h1 class="fw-bold text-primary-emphasis" 
                             data-aos="fade-up" data-aos-duration="500">All Report</h1>
                         <p class="lh-lg text-secondary" 
                         data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolor eius nesciunt quasi consectetur veniam, temporibus saepe? Aut, soluta maiores?</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-primary px-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#addmodal">
+                        <i class="fa-solid fa-plus me-1"></i>    
+                        Tambah Laporan</button>
+                    </div>
                 </div>
+                 
 
                 <!--filter-->
                 <div class="row g-3">
@@ -100,7 +108,7 @@
                 </div>
 
                 <!-- Cards -->
-                <div class="row mb-4 g-4 mt-3">
+                <div class="row mb-4 g-4 mt-3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="650">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card">
                             <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.4);">
@@ -305,10 +313,55 @@
                         <li class="page-item"><a class="page-link" href="#">Next</a></li>
                     </ul>
                 </nav>
+            </div>
         </section>
+        <!-- All Report End -->
 
-
-         <!-- All Report End -->
+        <!-- Modal -->
+        <div class="modal fade" id="addmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel">
+                            <i class="fa-solid fa-pen-to-square"></i> 
+                              Modal title
+                            </h1>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="">
+                    <div class="modal-body p-md-5 p-3">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Judul Laporan:</label>
+                            <input type="text" class="form-control shadow-sm" placeholder="Masukkan Judul Laporan..">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Kategori:</label>
+                            <select class="form-select shadow-sm fw-semibold" name="" id="">
+                            <option value="">Pilih Kategori</option>
+                            <option value="">Akademik</option>
+                            <option value="">Fasilitas</option>
+                            <option value="">Anonymous</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Tulis Laporan Anda:</label>
+                            <textarea class="form-control shadow-sm" name="" id="" rows="5" placeholder="Masukkan Laporan Anda.."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="">Upload Foto:</label>
+                            <input type="file" class="form-control shadow-sm" accept="image/*">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Submit Laporan
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="bg-primary py-5">
