@@ -32,7 +32,7 @@ section {
     overflow: hidden;
 }
 
-#services, #recent, #faq {
+#services, #recent, #faq #about{
     overflow: hidden;
 }
 
@@ -80,6 +80,14 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+    #about {
+        padding: 0 20px;
+        .img {
+            width: 300px;
+        }
+    }
+}
 @media (max-width: 1024px) {
     .hero .col img {
         width: 400px;
@@ -90,6 +98,9 @@ footer {
     }
 }
  @media  (max-width: 992px) {
+    #about {
+        margin-right: 20px;
+    }
     section {
         padding-top: 0;
     }
